@@ -1,4 +1,4 @@
-module.exports = function transform(/* arr */) {
-    throw 'Not implemented';
-    // remove line with error and write your code here
+module.exports = function transform(arr) {
+    if (arr.length === 0) return [];
+    if (!Array.isArray(arr)) throw new Error();
 };
